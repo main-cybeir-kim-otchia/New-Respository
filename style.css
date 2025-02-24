@@ -1,0 +1,300 @@
+/* Updated CSS */
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background Image */
+body {
+    background-image: url("bg1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(24, 23, 23);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* Logo Positioning */
+.logo img {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+/* Main Content */
+main {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 180px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+/* Button */
+.btn {
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.info-container {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.info-container h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.info-container p {
+    font-size: 16px;
+    color: #333;
+}
+.go-back {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.go-back:hover {
+    background-color: #0056b3;
+}
+/* Text colors specific to About page */
+.about-page h1, .about-page h2 {
+    color: #FF5733; /* Orange color */
+}
+
+.about-page p {
+    color: #b2401a; /* Gray color */
+}
+/* Updated CSS for About Page */
+.about-page .info-container {
+    position: relative;
+    top: 50px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.about-page .info-container h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.about-page .info-container p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.about-page h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #FF5733;
+    margin-top: 30px;
+}
+/* Tech Stack Button */
+nav .btn {
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+nav .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Go Back Button for Tech Stack */
+.go-back {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.go-back:hover {
+    background-color: #0056b3;
+}
+/* Tech Stack Styling */
+.tech-item {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+}
+
+.tech-image {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    border: 2px solid #007BFF;
+    object-fit: cover;
+}
+
+.tech-stack-page {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.tech-stack-page h1 {
+    font-size: 36px;
+    color: #007BFF;
+    margin-bottom: 30px;
+}
+.tech-stack-page .info-container {
+    position: relative;
+    top: -30px; /* Move upward */
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+/* Facebook Button */
+.fb-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: #1877F2; /* Facebook blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.fb-btn:hover {
+    background-color: #1558C0;
+}
+
+.fb-image {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.fb-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Space between image and text */
+    padding: 8px 16px;
+    background-color: #1877F2;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.fb-btn:hover {
+    background-color: #0d65d9;
+}
+
+.fb-image {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+/* Social Media Buttons */
+.fb-btn, .gmail-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+.fb-btn:hover, .gmail-btn:hover {
+    background-color: #0056b3;
+}
+
+.fb-image, .gmail-image {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+
