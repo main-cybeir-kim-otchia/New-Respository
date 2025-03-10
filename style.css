@@ -3,16 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-nav{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
 
 /* Body Styling */
 body {
     background-color: gray;
-    color: rgb(24, 23, 23);
+    color: white;
     font-family: Arial, sans-serif;
     text-align: center;
     display: flex;
@@ -42,17 +37,21 @@ header nav {
 
 /* Navigation Button */
 .btn {
-    padding: 8px 16px;
+    padding: 10px 20px;
     background-color: #007BFF;
     color: white;
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+    text-align: center;
+    min-width: 100px;
 }
 
 .btn:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
 }
 
 /* Center Container */
@@ -63,13 +62,16 @@ header nav {
     align-items: center;
     flex-grow: 1;
     padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 800px;
 }
 
 .center-container .name {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 16px;
-    color: white;
 }
 
 .center-container .profile-img {
@@ -82,17 +84,11 @@ header nav {
 }
 
 .center-container .info-container {
-    width: 300px;
+    width: 100%;
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.center-container .info-container h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #007BFF;
 }
 
 .center-container .info-container p {
@@ -101,26 +97,38 @@ header nav {
     line-height: 1.6;
 }
 
-/* Footer */
-footer {
-    width: 100%;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-align: center;
-}
-/* Ensuring the Vanta.js background covers the whole page */
+/* Vanta.js Background */
 #vanta-bg {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Puts the background behind other content */
+    z-index: -1;
 }
 
-/* Adjustments for better readability */
-body {
-    color: white;
-    text-align: center;
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .center-container .name {
+        font-size: 28px;
+    }
+
+    .center-container .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .center-container .info-container {
+        width: 90%;
+    }
 }
