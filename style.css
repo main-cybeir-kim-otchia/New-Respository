@@ -1,100 +1,8 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Styling */
+/* Custom Styles */
 body {
-    background-color: gray;
-    color: white;
     font-family: Arial, sans-serif;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* Header Styling */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
     color: white;
-    text-decoration: none;
-}
-
-header nav {
-    display: flex;
-    gap: 20px;
-}
-
-/* Navigation Button */
-.btn {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.2s;
-    display: inline-block;
     text-align: center;
-    min-width: 100px;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-}
-
-/* Center Container */
-.center-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 12px;
-    margin: 20px auto;
-    max-width: 800px;
-}
-
-.center-container .name {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 16px;
-}
-
-.center-container .profile-img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid white;
-    margin-bottom: 16px;
-}
-
-.center-container .info-container {
-    width: 100%;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.center-container .info-container p {
-    font-size: 16px;
-    color: #333;
-    line-height: 1.6;
 }
 
 /* Vanta.js Background */
@@ -107,28 +15,21 @@ header nav {
     z-index: -1;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-    }
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+}
 
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
+/* Navbar Overrides */
+.navbar {
+    background: rgba(0, 0, 0, 0.7) !important; /* Semi-transparent navbar */
+}
 
-    .center-container .name {
-        font-size: 28px;
-    }
+.navbar-brand, .nav-link {
+    color: white !important;
+}
 
-    .center-container .profile-img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .center-container .info-container {
-        width: 90%;
-    }
+.nav-link:hover {
+    color: #007BFF !important;
 }
